@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkapi_document=self.webpackChunkapi_document||[]).push([[2009],{61942:e=>{e.exports=JSON.parse('{"name":"@scalar/docusaurus","id":"default"}')}}]);
