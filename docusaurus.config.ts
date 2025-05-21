@@ -14,12 +14,13 @@ const config: Config = {
   url: 'https://your-docusaurus-site.example.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/docusaurus-sample/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'hikotq', // Usually your GitHub org/user name.
+  projectName: 'docusaurus-sample', // Usually your repo name.
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -41,7 +42,7 @@ const config: Config = {
           // You can also pass it a OpenAPI spec URL
           {
             spec: 'https://cdn.jsdelivr.net/npm/@scalar/galaxy/dist/latest.yaml',
-            route: '/openapi/',
+            route: '/redoc/',
           },
         ],
         // Theme Options for modifying how redoc renders them
@@ -88,7 +89,7 @@ const config: Config = {
       '@scalar/docusaurus',
       {
         label: 'Scalar',
-        route: '/scalar',
+        route: '/docusaurus-sample/scalar',
         showNavLink: true, // optional, default is true
         configuration: {
           url: 'https://cdn.jsdelivr.net/npm/@scalar/galaxy/dist/latest.yaml',
@@ -114,7 +115,7 @@ const config: Config = {
           label: 'Tutorial',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
-        {to: '/openapi', label: 'redoc', position: 'left'},
+        {to: '/redoc', label: 'redoc', position: 'left'},
 	{to: '/swagger', label: 'Swagger', position: 'left'},
         {
           href: 'https://github.com/facebook/docusaurus',
