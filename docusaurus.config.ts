@@ -34,6 +34,24 @@ const config: Config = {
 
   presets: [
     [
+      'redocusaurus',
+      {
+        // Plugin Options for loading OpenAPI files
+        specs: [
+          // You can also pass it a OpenAPI spec URL
+          {
+            spec: 'https://cdn.jsdelivr.net/npm/@scalar/galaxy/dist/latest.yaml',
+            route: '/openapi/',
+          },
+        ],
+        // Theme Options for modifying how redoc renders them
+        theme: {
+          // Change with your site colors
+          primaryColor: '#1890ff',
+        },
+      },
+    ] satisfies Redocusaurus.PresetEntry,
+    [
       'classic',
       {
         docs: {
@@ -96,6 +114,7 @@ const config: Config = {
           label: 'Tutorial',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/openapi', label: 'redoc', position: 'left'},
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
