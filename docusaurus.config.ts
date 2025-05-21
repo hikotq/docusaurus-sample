@@ -115,6 +115,7 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {to: '/openapi', label: 'redoc', position: 'left'},
+	{to: '/swagger', label: 'Swagger', position: 'left'},
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',

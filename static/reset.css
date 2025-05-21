@@ -1,0 +1,4 @@
+ /* ヘッダーなど最低限必要なスタイル以外を消す */
+ body *:not(nav, a, svg, path, span, button, img) {
+   all: revert;
+ }
